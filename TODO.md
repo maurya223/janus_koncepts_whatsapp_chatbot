@@ -10,3 +10,4 @@
 - [x] User adds environment variables to .env (GROK_API_KEY, PHONE_NUMBER_ID, verify_token, access_token)
 - [x] Install new dependencies
 - [x] Test the app
+- [x] Fix import errors for langchain modules
