@@ -2,9 +2,9 @@ flask
 requests
 python-dotenv
 faiss-cpu
-sentence-transformers
 langchain
 langchain-openai
 langchain-community
-nltk
-pypdf
+openai
+gunicorn==21.2.0
+
