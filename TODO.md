@@ -11,3 +11,5 @@
 - [x] Install new dependencies
 - [x] Test the app
 - [x] Fix import errors for langchain modules
+- [x] Update requirements.txt with compatible versions
+- [x] Update preparedoc.py imports

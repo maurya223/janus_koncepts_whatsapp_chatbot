@@ -75,6 +75,7 @@ def webhook():
     data = request.json
     print("Received data:", data)
 
+    sender = None
     try:
         message = data["entry"][0]["changes"][0]["value"]["messages"][0]
         sender = message["from"]
@@ -92,7 +93,8 @@ def webhook():
         print("KeyError:", e)
     except Exception as e:
         print("Error:", e)
-        send_message(sender, "Sorry, I couldn't process your message.")
+        if sender:
+            send_message(sender, "Sorry, I couldn't process your message.")
 
     return "ok", 200
 
